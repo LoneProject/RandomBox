@@ -1,0 +1,26 @@
+plugins {
+    id "java"
+}
+
+group = "org.lone64.randombox"
+
+repositories {
+    maven { url = "https://repo.loneproject.org/repository/maven-public/"; allowInsecureProtocol = true }
+}
+
+dependencies {
+    // SPIGOT DEPENDENCIES
+    compileOnly "org.spigotmc:spigot-api:1.19-R0.1"
+
+    // LIBRARY DEPENDENCIES
+    compileOnly "org.projectlombok:lombok:1.18.26"
+    annotationProcessor "org.projectlombok:lombok:1.18.26"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
+tasks.jar {
+    archiveFileName.set("RandomBox.jar")
+}

@@ -1,0 +1,14 @@
+name: RandomBox
+main: org.lone64.randombox.RandomBox
+author: lone64
+version: 1.0.0
+api-version: '1.19'
+description: 랜덤박스 시스템 플러그인
+permissions:
+  randombox.admin:
+    default: op
+    description: 랜덤박스 시스템 관리자 권한 노드
+commands:
+  랜덤박스:
+    permission: randombox.admin
+    description: 랜덤박스 시스템 관리자 전용 명령어
