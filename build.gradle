@@ -13,11 +13,11 @@ tasks.jar {
 group = "org.lone64.randombox"
 
 repositories {
-    maven { url = "https://repo.loneproject.org/repository/maven-public/" }
+    maven { url = "https://repo.lone64.org/repository/maven-public/" }
 }
 
 dependencies {
-    compileOnly "org.spigotmc:spigot-api:1.19-R0.1"
+    compileOnly "org.spigotmc:spigot-api:R0.1:1.19"
     compileOnly "org.projectlombok:lombok:1.18.26"
     annotationProcessor "org.projectlombok:lombok:1.18.26"
 }
